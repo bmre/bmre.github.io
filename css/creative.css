@@ -348,3 +348,19 @@ header.masthead {
 
 .btn-xl {
   padding: 15px 30px; }
+
+#footer > .container {
+  padding-top: 40px;
+  height: 100px;
+  background: #F05F40;
+}
+
+a.text-faded {
+  color: rgba(255, 255, 255, 0.7); }
+
+a.text-faded:active {
+  color: rgba(255, 255, 255, 0.6); }
+
+a.text-faded:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6); }
