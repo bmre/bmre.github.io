@@ -350,9 +350,24 @@ header.masthead {
   padding: 15px 30px; }
 
 #footer > .container {
-  padding-top: 40px;
+  text-align: center;
+  padding-top: 27px;
   height: 100px;
   background: #F05F40;
+}
+
+#footer > .backtotop {
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  #footer > .container {
+    padding-top: 27px;
+    height: 75px;
+  }
+  #footer > .backtotop {
+    text-align: center;
+  }
 }
 
 a.text-faded {
