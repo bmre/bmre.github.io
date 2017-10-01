@@ -3,6 +3,11 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
+
+.parallax-slider {
+  filter: brightness(50%);
+}
+
 body,
 html {
   width: 100%;
@@ -147,7 +152,7 @@ header.masthead {
   min-height: auto;
   text-align: center;
   color: white;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/header.jpg");
+  /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/header.jpg");*/
   /*background-image: url("../img/header.jpg");*/
   background-position: center;
   -webkit-background-size: cover;

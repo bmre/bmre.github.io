@@ -2,28 +2,29 @@
 <html lang="en">
 
   <head>
-
+    
+    <!-- Meta
+    -------------------------------------------------------------------------->
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="description" content="BM Real estate holdings">
+    <meta name="author" content="Joseph Trumbull">
+    
     <title>BMRE Holdings, LLC</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Fonts
+    -------------------------------------------------------------------------->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
+    
+    <!-- CSS
+    -------------------------------------------------------------------------->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="css/creative.css" rel="stylesheet">
-
+    
   </head>
 
   <body id="page-top">
@@ -63,7 +64,7 @@
     <!-- Masthead
     -------------------------------------------------------------------------->
     
-    <header class="masthead">
+    <header class="masthead" id="header">
       <div class="header-content">
         <div class="header-content-inner">
           <h1 id="homeHeading">BMRE Holdings, LLC</h1>
@@ -132,6 +133,7 @@
     
     <section class="p-0" id="portfolio">
       <div class="container-fluid">
+        
         <div class="row no-gutter popup-gallery">
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
@@ -257,21 +259,46 @@
               <a href="mailto:info@bmreholdings.com">info@bmreholdings.com</a>
             </p>
           </div>
+          
+          <form>
+            <div class="form-group">
+              <label>Email address</label>
+              <input type="email" class="form-control" placeholder="you@yourdomain.com" />
+            </div>
+            <div class="form-group">
+              <label>Phone number</label>
+              <input type="phone" class="form-control" placeholder="123-456-7890" />
+            </div>
+            <div class="form-group">
+              <label>Questions, comments, and/or concerns</label>
+              <textarea class="form-control"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary btn-xl">Submit</button>
+          </form>
+          
         </div>
       </div>
     </section>
-
-    <!-- Bootstrap core JavaScript -->
+    
+    <!-- Section: Form
+    -------------------------------------------------------------------------->
+    
+    <footer class="bg-primary" id="footer">
+      
+    </footer>
+    
+    <!-- Javascript
+    -------------------------------------------------------------------------->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Custom scripts for this template -->
+    <script src="vendor/pixelcog/parallax.min.js"></script>
+    <script>
+      $('#header').parallax({imageSrc: 'img/header.jpg'});
+    </script>
     <script src="js/creative.min.js"></script>
 
   </body>
