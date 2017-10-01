@@ -4,8 +4,12 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
 
+.parallax-mirror {
+  background: black;
+}
 .parallax-slider {
-  filter: brightness(50%);
+  /*filter: brightness(50%);*/
+  opacity: 0.5;
 }
 
 body,
