@@ -67,5 +67,19 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
-
+  
+  //---------------------------------------------------------------------------
+  
+  $('#header').parallax({imageSrc: 'img/header.jpg'});
+  
+  //---------------------------------------------------------------------------
+  
+  var $form = $('#contact-form');
+  var $modal = $('#form-submit-modal');
+  var $submit = $form.find('button');
+  
+  $submit.on('click', function () {
+    $modal.modal('show');
+  })
+  
 })(jQuery); // End of use strict

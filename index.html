@@ -229,35 +229,49 @@
       </div>
     </section>
     
+    <!-- Section: Contact form
+    -------------------------------------------------------------------------->
+    
     <div class="call-to-action bg-dark" id="contact">
       <div class="container">
         
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading"><span class="fa fa-info-circle"></span>&nbsp; Request information</h2>
+            <hr />
+            <p>
+              Want to get involved? Have a question? Drop us a line, and we'll reach out to you as soon as possible!
+            </p>
           </div>
           <div class="col-lg-8 mx-auto">
-            <form>
+            <form id="contact-form">
+                <div class="form-group">
+                  <label>
+                    <span class="fa fa-user fa-2x"></span>
+                    Name
+                  </label>
+                  <input type="text" class="form-control" placeholder="John Smith" name="name"/>
+                </div>
                 <div class="form-group">
                   <label>
                     <span class="fa fa-envelope-o fa-2x"></span>
                     Email address
                   </label>
-                  <input type="email" class="form-control" placeholder="you@yourdomain.com" />
+                  <input type="email" class="form-control" placeholder="you@yourdomain.com" name="email"/>
                 </div>
                 <div class="form-group">
                   <label>
                     <span class="fa fa-phone fa-2x"></span>
                     Phone number
                   </label>
-                  <input type="phone" class="form-control" placeholder="123-456-7890" />
+                  <input type="phone" class="form-control" placeholder="123-456-7890" name="phone" />
                 </div>
                 <div class="form-group">
                   <label>
                     <span class="fa fa-comments fa-2x"></span>
-                    Questions, comments, and/or concerns
+                    Questions / comments
                   </label>
-                  <textarea class="form-control"></textarea>
+                  <textarea class="form-control" rows="5" style="resize: none;" name="comment"></textarea>
                 </div>
                 <button type="button" class="btn btn-default btn-xl sr-button">Submit</button>
             </form>
@@ -294,7 +308,7 @@
       </div>
     </section>
     
-    <!-- Section: Form
+    <!-- Section: Footer
     -------------------------------------------------------------------------->
     
     <footer class="bg-primary" id="footer">
@@ -307,6 +321,32 @@
       </div>
     </footer>
     
+    <!-- Form submit modal
+    -------------------------------------------------------------------------->
+    
+    <div class="modal fade" id="form-submit-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Request for information</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h2 class="text-center"><span class="fa fa-check"></span> Success!</h2>
+            <hr />
+            <p class="text-center">
+              Your request has been sent! We will be reaching out to you shortly.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <!-- Javascript
     -------------------------------------------------------------------------->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -316,10 +356,7 @@
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="vendor/pixelcog/parallax.min.js"></script>
-    <script>
-      $('#header').parallax({imageSrc: 'img/header.jpg'});
-    </script>
-    <script src="js/creative.min.js"></script>
+    <script src="js/creative.js"></script>
 
   </body>
 
